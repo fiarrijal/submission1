@@ -29,7 +29,7 @@ nav {
   height: 50px;
 }
 
-.menu ul li {
+.menu ul.topnav li {
   list-style-type: none;
   display: inline;
   margin-left: 15px;
@@ -40,7 +40,7 @@ nav {
   color: #fff;
 }
 
-.menu ul li.icon {
+span.icon {
   display: none;
 }
 .footer {
@@ -52,31 +52,29 @@ nav {
 }
 
 @media screen and (max-width: 680px) {
-  ul li:not(:last-child) {
+  .menu ul {
     display: none;
   }
-  .menu ul li.icon {
+  span.icon {
     display: block;
     color: #fff;
     font-size: 1.7em;
   }
 
   /* Buat navbar responsive */
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
+
+  ul.topnav.responsive {
     position: absolute;
-    right: 0;
-    top: 0;
   }
+
   ul.topnav.responsive li {
-    float: none;
-    display: inline;
+    display: block;
   }
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
   }
-}
+
   /* End navbar responsive */
   .container {
     margin: 0 50px;
