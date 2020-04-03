@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 80px;
+  background-color: rgb(74, 97, 97);
+}
+
+.container {
+  margin: 0 100px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.menu,
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 15px;
+}
+.menu ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu ul li.icon {
+  display: none;
+}
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(69, 126, 126);
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+  ul li:not(:last-child) {
+    display: none;
+  }
+  .menu ul li.icon {
+    display: block;
+    color: #fff;
+    font-size: 1.7em;
+  }
+
+  /* Buat navbar responsive */
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+  /* End navbar responsive */
+  .container {
+    margin: 0 50px;
+  }
+}
